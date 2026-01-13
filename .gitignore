@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+
+# Claude Code
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Azure auth tokens (stored in ~/.azure, but just in case)
+*auth-record*.json
+*.token
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
