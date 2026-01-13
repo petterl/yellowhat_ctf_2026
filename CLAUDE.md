@@ -71,6 +71,62 @@ Keep a summary table:
 |----|-----------|----------|--------|--------|------|
 | 1  | Name      | Category | 100    | ✅     | FLAG{...} |
 
+### solutions/ATTACK-TIMELINE.md
+
+After solving multiple challenges, create a comprehensive attack timeline:
+
+```markdown
+# Attack Timeline
+
+## Executive Summary
+<brief description of the attack, duration, systems affected>
+
+## Phase 1: Initial Access
+| Attribute | Value |
+|-----------|-------|
+| Technique | T1566.001 - Spearphishing |
+| Victim | <user> |
+| Vector | <email/download/etc> |
+
+## Phase 2: Execution & Persistence
+<repeat for each phase of the attack>
+
+## Attack Flow Diagram
+```
+System A --> System B --> System C
+    |           |
+    v           v
+   C2         Data
+```
+
+## Indicators of Compromise (IOCs)
+
+### Domains
+| Domain | Purpose |
+|--------|---------|
+| evil.com | C2 server |
+
+### File Hashes (SHA1)
+| Hash | File | Location |
+|------|------|----------|
+| abc123... | malware.exe | C:\Temp |
+
+### Accounts Compromised
+| Account | Usage |
+|---------|-------|
+| svc.backup | Lateral movement |
+
+## Detection Opportunities
+1. <what to alert on>
+2. <suspicious patterns>
+```
+
+**When to create the timeline:**
+- After solving 5+ related challenges
+- When you can map the full attack chain
+- Include: phases, techniques (MITRE ATT&CK), IOCs, timestamps
+- Cross-reference with individual challenge writeups
+
 ## Useful KQL Tables (Threat Hunting)
 
 | Table | Purpose |
